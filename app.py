@@ -7,10 +7,10 @@ model = pickle.load(open('model_pickle.pkl','rb'))
 
 
 def main():
-  st.sidebar.header("Insurance Cost prediction")
-  st.sidebar.text("This a Web app that tells you the predicted insurance costs.")
+  st.sidebar.header("Stroke Risk Prediction")
+  st.sidebar.text("This a Web app that tells you the predicted wether you will have a stoke or not.")
   st.sidebar.header("Just fill in the information below")
-  st.sidebar.text("The AdaBoost regression Model was used.")
+  st.sidebar.text("The NaiveBayes Classifier was used.")
 
 
 
@@ -25,7 +25,11 @@ def main():
   if st.button('Predict'):
     result = model.predict(inputs)
     updated_res = result.flatten().astype(float)
-    st.success('The Your Insurance Costs will be{}'.format(updated_res))
+    if updated_res == 0:
+       st.write("Not very Proabable you will have a stoke soon but still take good care of yourself regardless")
+    else:
+       st.write("It is Probable you might have a stroke soon therfore you should take better care of yourself")
+   
 
 
 if __name__ =='__main__':
