@@ -15,7 +15,7 @@ def main():
 
 
   age = st.slider("Input Your age", 0, 100)
-  hypertension = st.slider("Input your if you have hypertesnsion with 0 for no and 1 for yes",0,1)
+  hypertension = st.slider("Input your if you have hypertension with 0 for no and 1 for yes",0,1)
   heartdisease = st.slider("Input your if you have heartdisease with 0 for no and 1 for yes",0 ,1)
   sugar = st.slider("Put your average glucose level",150.0, 300.000)
   bmi = st.slider("Input your BMI",0.0,70.0)
