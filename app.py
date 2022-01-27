@@ -3,7 +3,7 @@ import numpy as np
 import string
 import pickle
 st.set_option('deprecation.showfileUploaderEncoding',False) 
-model = pickle.load(open('model_pickle.pkl','rb'))
+model = pickle.load(open('model_pkl.pkl','rb'))
 
 
 def main():
