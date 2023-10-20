@@ -25,7 +25,7 @@ def main():
   if st.button('Predict'):
     result = model.predict(inputs)
     updated_res = result.flatten().astype(int)
-    if updated_res == 0:
+    if updated_res <= 30:
        st.write("Not very Proabable you will have a stoke soon but still take good care of yourself regardless")
     else:
        st.write("It is Probable you might have a stroke soon therfore you should take better care of yourself")
