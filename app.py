@@ -28,7 +28,7 @@ def main():
     if updated_res <= 30:
        st.write("Not very Proabable you will have a stoke soon but still take good care of yourself regardless")
     else:
-       st.write("It is Probable you might have a stroke soon therfore you should take better care of yourself")
+       st.write("It is Probable you might have a stroke in the future therfore you should take better care of yourself")
    
 
 
